@@ -130,8 +130,7 @@ def vs(lang, a, b):
             program_error.Set_Damage(randint(1, 10 ** 50))
 
             if event == 3:
-                event_message = event_list[randint(0, len(event_list) - 1)].Inflict_Damage(
-                    team_a + team_b[randint(0, len(team_a + team_b) - 1)])
+                event_message = event_list[randint(0, len(event_list) - 1)].Inflict_Damage((team_a + team_b)[randint(0, len(team_a + team_b) - 1)])
                 list_events_in_game.append(event_message)
 
             for attacker in team_a + team_b:
@@ -152,10 +151,9 @@ def vs(lang, a, b):
                         print(f"{target.name} {messages["has_died"]}")
 
             if any_team_alive(team_a) and any_team_alive(team_b):
-                print(
-                    f"\n{messages["round"]}{i}{"\n" * 2 if event_message != "" else "\n"}{event_message}{"\n" * 2 if power_message != "" else ""}{power_message}"
-                    f"{"\n" * 2 if healing_message != "" else ""}{healing_message}{"\n" * 2 if healing_message != "" else ""}"
-                    f"\n{messages["tableau_player"]}{' ' * (max_name_length - min_name_length)}{messages["tableau_damage_HP"]}\n{'-' * (max_name_length + 35)}")
+                print(f"\n{messages["round"]}{i}{"\n" * 2 if event_message != "" else "\n"}{event_message}{"\n" * 2 if power_message != "" else ""}{power_message}"
+                      f"{"\n" * 2 if healing_message != "" else ""}{healing_message}{"\n" * 2 if healing_message != "" else ""}"
+                      f"\n{messages["tableau_player"]}{' ' * (max_name_length - min_name_length)}{messages["tableau_damage_HP"]}\n{'-' * (max_name_length + 35)}")
 
                 for player in team_a + team_b:
                     player_info_table = f"{player.name}{' ' * (max_name_length - len(player.name) + 3)}{player.damage_received:.2f}{' ' * (17 - len(str(player.damage_received)))}{player.hp:.2f}"
@@ -168,20 +166,17 @@ def vs(lang, a, b):
                 if player_stat == '1':
                     for player in team_a:
                         if player.hp > 0:
-                            player.Display_Info(player.weapon, player.weapon.ammo_type, player.weapon.mode,
-                                                player.armor)
+                            player.Display_Info(player.weapon, player.weapon.ammo_type, player.weapon.mode, player.armor)
 
                 elif player_stat == '2':
                     for player in team_b:
                         if player.hp > 0:
-                            player.Display_Info(player.weapon, player.weapon.ammo_type, player.weapon.mode,
-                                                player.armor)
+                            player.Display_Info(player.weapon, player.weapon.ammo_type, player.weapon.mode, player.armor)
 
                 elif player_stat == '3':
                     for player in team_a + team_b:
                         if player.hp > 0:
-                            player.Display_Info(player.weapon, player.weapon.ammo_type, player.weapon.mode,
-                                                player.armor)
+                            player.Display_Info(player.weapon, player.weapon.ammo_type, player.weapon.mode, player.armor)
 
                 input(messages["press_enter"])
 

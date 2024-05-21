@@ -66,12 +66,9 @@ def vs(lang, a, b):
         else:
             print(messages["error_pass_enter"])
 
-    def any_team_alive(team):
-        return any(player.hp > 0 for player in team)
-
     if n.lower() == messages["pass"]:
 
-        while any_team_alive(team_a) and any_team_alive(team_b):
+        while any(player.hp > 0 for player in team_a) and any(player.hp > 0 for player in team_b):
 
             event = randint(1, 5)
             power = randint(1, 7)
@@ -121,7 +118,7 @@ def vs(lang, a, b):
 
         input(messages["press_enter"])
 
-        while any_team_alive(team_a) and any_team_alive(team_b):
+        while any(player.hp > 0 for player in team_a) and any(player.hp > 0 for player in team_b):
             print(f"\n{"=" * 50}")
 
             event = randint(1, 5)
@@ -150,7 +147,7 @@ def vs(lang, a, b):
                     if target.hp <= 0:
                         print(f"{target.name} {messages["has_died"]}")
 
-            if any_team_alive(team_a) and any_team_alive(team_b):
+            if any(player.hp > 0 for player in team_a) and any(player.hp > 0 for player in team_b):
                 print(f"\n{messages["round"]}{i}{"\n" * 2 if event_message != "" else "\n"}{event_message}{"\n" * 2 if power_message != "" else ""}{power_message}"
                       f"{"\n" * 2 if healing_message != "" else ""}{healing_message}{"\n" * 2 if healing_message != "" else ""}"
                       f"\n{messages["tableau_player"]}{' ' * (max_name_length - min_name_length)}{messages["tableau_damage_HP"]}\n{'-' * (max_name_length + 35)}")

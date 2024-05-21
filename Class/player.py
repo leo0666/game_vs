@@ -6,7 +6,7 @@ def Player(lang):
     # class
 
     class PLAYER:
-        def __init__(self, name, hp=100, damage_received=0, weapon=None, armor=None, power=None, healing=None):
+        def __init__(self, name, hp=100, damage_received=0, weapon=None, armor=None, power=None, healing=None, team=None):
             self.name = name
             self.total_hp = hp
             self.hp = hp
@@ -15,6 +15,7 @@ def Player(lang):
             self.armor = armor
             self.power = power
             self.healing = healing
+            self.team = team
 
         def Check_Percent_Hp(self, hp_remaining):
             total_hp = self.total_hp

@@ -5,12 +5,14 @@ messages = {
     "mode_fonct_consol": "\n1. VS    2. Retour    3. Quitter",
     "error_valide_number": "\nEntrez un numéro valide !!",
     "error_not_number": "\nEntrez un numéro !!",
-    "param_consol": "\n1. Langage    2. Retour    3. Quitter",
+    "param_consol": "\n1. Langage    2. Nom automatique    3. Retour    4. Quitter",
     "q_param_consol": "\nSaisissez un numéro correspondant à l'option souhaitée : ",
     "lang_option": "\n1. FR    2. EN    3. Retour    4. Quitter",
     "q_lang_option": "\nSaisissez un numéro correspondant au langage souhaitée : ",
     "vs_a": "Entrez le nombre de joueurs contre l'équipe b : ",
     "vs_b": "Entrez le nombre de joueurs contre l'équipe a : ",
+    "auto_name": "1. Oui    2. Non    3. Retour    4. Quitter",
+    "q_auto_name": "Saisissez un numéro correspondant à la valeur souhaitée : ",
 
     # VS
     "enter_name_player": "Entrez le nom du joueur",
@@ -32,6 +34,8 @@ messages = {
     "message_view_stat": "\nEntrez le numéro du joueur pour afficher ses stats (appuyez sur 'Entrée' pour ignorer) : ",
     "has_died": "est mort !",
     "pass": "passer",
+    "tableau_team": "Team",
+    "auto_name_for": "player ",
 
     # weapon_mode
     "name_single_shot": "Tire unique",

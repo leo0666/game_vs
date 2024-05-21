@@ -1,8 +1,8 @@
 def Weapon(lang):
     from Class.ammo_type import Ammo_type
     from Class.weapon_mode import Weapon_mode
-    from random import randint
     from Trad.trad import load_translation
+    import random
 
     messages = load_translation(lang)
 
@@ -64,26 +64,28 @@ def Weapon(lang):
     phamas = ASSAULTRIFLE(messages["name_phamas"])
     god_rifle = GODRIFLE(messages["name_god_rifle"])
 
-    pistol.ammo_type = ammo_type_list[randint(0, len(ammo_type_list) - 1)]
-    pistol.mode = list_pistol[randint(0, len(list_pistol) - 1)]
+    pistol.ammo_type = random.choice(ammo_type_list)
+    pistol.mode = random.choice(list_pistol)
     pistol.update_damage(pistol.ammo_type, pistol.mode)
 
-    sniper.ammo_type = ammo_type_list[randint(0, len(ammo_type_list) - 1)]
-    sniper.mode = list_sniper[randint(0, len(list_sniper) - 1)]
+    sniper.ammo_type = random.choice(ammo_type_list)
+    sniper.mode = random.choice(list_sniper)
     sniper.update_damage(sniper.ammo_type, sniper.mode)
 
-    spas12.ammo_type = ammo_type_list[randint(0, len(ammo_type_list) - 1)]
-    spas12.mode = list_shotgun[randint(0, len(list_shotgun) - 1)]
+    spas12.ammo_type = random.choice(ammo_type_list)
+    spas12.mode = random.choice(list_shotgun)
     spas12.update_damage(spas12.ammo_type, spas12.mode)
 
-    phamas.ammo_type = ammo_type_list[randint(0, len(ammo_type_list) - 1)]
-    phamas.mode = list_assault_rifle[randint(0, len(list_assault_rifle) - 1)]
+    phamas.ammo_type = random.choice(ammo_type_list)
+    phamas.mode = random.choice(list_assault_rifle)
     phamas.update_damage(phamas.ammo_type, phamas.mode)
 
-    god_rifle.ammo_type = ammo_type_list[randint(0, len(ammo_type_list) - 1)]
-    god_rifle.mode = list_assault_rifle[randint(0, len(list_assault_rifle) - 1)]
+    god_rifle.ammo_type = random.choice(ammo_type_list)
+    god_rifle.mode = random.choice(list_assault_rifle)
     god_rifle.update_damage(phamas.ammo_type, phamas.mode)
 
     weapon_list = [no_weapon, spas12, pistol, phamas, sniper, god_rifle]
+
+    random.shuffle(weapon_list)
 
     return weapon_list

@@ -1,5 +1,6 @@
 def Weapon_mode(lang):
     from Trad.trad import load_translation
+    import random
 
     messages = load_translation(lang)
 
@@ -32,5 +33,10 @@ def Weapon_mode(lang):
     list_assault_rifle = [single_shot, automatic, burst_fire]
     list_shotgun = [single_shot]
     list_pistol = [single_shot]
+
+    listes = [list_pistol, list_sniper, list_shotgun, list_assault_rifle]
+
+    for liste in listes:
+        random.shuffle(liste)
 
     return list_sniper, list_assault_rifle, list_shotgun, list_pistol

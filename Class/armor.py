@@ -1,5 +1,6 @@
 def Armor(lang):
     from Trad.trad import load_translation
+    import random
 
     messages = load_translation(lang)
 
@@ -35,5 +36,7 @@ def Armor(lang):
     god_armor = GOD(messages["name_god_armor"])
 
     armor_list = [no_armor, wood_armor, iron_armor, god_armor]
+
+    random.shuffle(armor_list)
 
     return armor_list

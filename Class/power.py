@@ -1,5 +1,6 @@
 def Power(lang):
     from Trad.trad import load_translation
+    import random
 
     messages = load_translation(lang)
 
@@ -19,5 +20,7 @@ def Power(lang):
     lightning = LIGHTNING(messages["name_lightning"])
 
     power_list = [lightning]
+
+    random.shuffle(power_list)
 
     return power_list

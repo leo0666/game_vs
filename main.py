@@ -6,6 +6,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 lang = 'EN'
 messages = load_translation(lang)
+auto_name = 2  # auto_name false
 
 while True:
     print(messages["fonct_consol"])
@@ -28,7 +29,7 @@ while True:
                         a = int(input(messages["vs_a"]))
                         b = int(input(messages["vs_b"]))
 
-                        vs(lang, a, b)
+                        vs(lang, a, b, auto_name)
 
                     elif mode == 2:
                         os.system('cls' if os.name == 'nt' else 'clear')
@@ -85,6 +86,36 @@ while True:
                                 print(messages["error_not_number"])
 
                     elif param == 2:
+                        os.system('cls' if os.name == 'nt' else 'clear')
+
+                        while True:
+                            print("\n" + messages["auto_name"])
+
+                            try:
+                                q_auto_name = int(input("\n" + messages["q_auto_name"]))
+
+                                if q_auto_name == 1:
+                                    os.system('cls' if os.name == 'nt' else 'clear')
+                                    auto_name = 1
+
+                                elif q_auto_name == 2:
+                                    os.system('cls' if os.name == 'nt' else 'clear')
+                                    auto_name = 2
+
+                                elif q_auto_name == 3:
+                                    os.system('cls' if os.name == 'nt' else 'clear')
+                                    break
+
+                                elif q_auto_name == 4:
+                                    exit(0)
+
+                                else:
+                                    print(messages["error_valide_number"])
+
+                            except ValueError:
+                                print(messages["error_not_number"])
+
+                    elif param == 3:
                         os.system('cls' if os.name == 'nt' else 'clear')
                         break
 

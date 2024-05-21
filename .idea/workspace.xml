@@ -6,7 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="1672d6ad-b5d4-4fff-944a-0d5b9c5f3a92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/ammo_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class/ammo_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/armor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class/armor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class/event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/healing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class/healing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/power.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class/power.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/weapon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class/weapon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/weapon_mode.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class/weapon_mode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trad/trad_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trad/trad_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trad/trad_fr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trad/trad_fr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VS.py" beforeDir="false" afterPath="$PROJECT_DIR$/VS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,34 +34,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "leo0666"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;leo0666&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/leo0666/game_vs",
-    "accountId": "0ac1c465-3bc4-4859-b406-c600f071b8cd"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/leo0666/game_vs&quot;,
+    &quot;accountId&quot;: &quot;0ac1c465-3bc4-4859-b406-c600f071b8cd&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2gkZOv9Ki9L7Pc4wESA5wqnLSro" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="game_vs" />
@@ -92,5 +104,16 @@
       <updated>1716243508040</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,22 +1,24 @@
 messages = {
     # main
     "fonct_consol": "\n1. Play    2. Options    3. Quit",
-    "q_fonct_consol": "\nEnter a number corresponding to the desired function: ",
+    "q_fonct_consol": "\nEnter a number corresponding to the desired function : ",
     "mode_fonct_consol": "\n1. VS    2. Back    3. Quit",
     "error_valide_number": "\nEnter a valid number !!",
     "error_not_number": "\nEnter a number !!",
-    "param_consol": "\n1. Language    2. Back    3. Quit",
-    "q_param_consol": "\nEnter a number corresponding to the desired option: ",
+    "param_consol": "\n1. Language    2. Auto name    3. Back    4. Quit",
+    "q_param_consol": "\nEnter a number corresponding to the desired option : ",
     "lang_option": "\n1. FR    2. EN    3. Back    4. Quit",
-    "q_lang_option": "\nEnter a number corresponding to the desired language: ",
+    "q_lang_option": "\nEnter a number corresponding to the desired language : ",
     "vs_a": "Enter the number of player against the b team : ",
     "vs_b": "Enter the number of player against the a team : ",
+    "auto_name": "1. Yes    2. No    3. Back    4. Quit",
+    "q_auto_name": "Enter a number corresponding to the desired value : ",
 
     # VS
     "enter_name_player": "Enter the name of player",
     "no_weapon": "No weapon",
     "warning_no_weapon": "\nWarning !! Both players have no weapon, the combat may last a long time !!",
-    "pass_enter": "\nWrite 'pass' to skip the combat and only see the results or press 'Enter': ",
+    "pass_enter": "\nWrite 'pass' to skip the combat and only see the results or press 'Enter' : ",
     "error_pass_enter": "\nError !! Write 'pass' or press 'Enter'!",
     "number_rounds": "\nNumber of rounds : ",
     "number_events": "Number of events : ",
@@ -32,6 +34,8 @@ messages = {
     "message_view_stat": "\nEnter the player number to view their stats (press 'Enter' to skip) : ",
     "has_died": "has died !",
     "pass": "pass",
+    "tableau_team": "Team",
+    "auto_name_for": "player ",
 
     # weapon_mode
     "name_single_shot": "Single shot",

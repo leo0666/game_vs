@@ -1,5 +1,6 @@
 def Event(lang):
     from Trad.trad import load_translation
+    import random
 
     messages = load_translation(lang)
 
@@ -33,5 +34,7 @@ def Event(lang):
     program_error = PROGRAMERROR(messages["name_event_program_error"])
 
     event_list = [storm, program_error]
+
+    random.shuffle(event_list)
 
     return event_list, program_error

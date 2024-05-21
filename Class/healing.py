@@ -1,5 +1,6 @@
 def Healing(lang):
     from Trad.trad import load_translation
+    import random
 
     messages = load_translation(lang)
 
@@ -25,5 +26,7 @@ def Healing(lang):
     medium_potion = MEDIUMPOTION(messages["name_medium_potion"])
 
     healing_list = [small_potion, medium_potion]
+
+    random.shuffle(healing_list)
 
     return healing_list

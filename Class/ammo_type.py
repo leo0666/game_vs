@@ -1,5 +1,6 @@
 def Ammo_type(lang):
     from Trad.trad import load_translation
+    import random
 
     messages = load_translation(lang)
 
@@ -28,5 +29,7 @@ def Ammo_type(lang):
     explosive_ammo = EXPLOSIVE(messages["name_explosive_ammo"])
 
     ammo_type_list = [normal_ammo, explosive_ammo]
+
+    random.shuffle(ammo_type_list)
 
     return ammo_type_list

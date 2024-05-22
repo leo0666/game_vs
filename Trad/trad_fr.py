@@ -9,8 +9,8 @@ messages = {
     "q_param_consol": "\nSaisissez un numéro correspondant à l'option souhaitée : ",
     "lang_option": "\n1. FR    2. EN    3. Retour    4. Quitter",
     "q_lang_option": "\nSaisissez un numéro correspondant au langage souhaitée : ",
-    "vs_a": "Entrez le nombre de joueurs contre l'équipe b : ",
-    "vs_b": "Entrez le nombre de joueurs contre l'équipe a : ",
+    "vs_nb_team": "Entrez le nombre de team : ",
+    "vs_nb_player": "Entrez le nombre total de joueurs : ",
     "auto_name": "1. Oui    2. Non    3. Retour    4. Quitter",
     "q_auto_name": "Saisissez un numéro correspondant à la valeur souhaitée : ",
 

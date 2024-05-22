@@ -26,10 +26,10 @@ while True:
                     if mode == 1:
                         os.system('cls' if os.name == 'nt' else 'clear')
 
-                        a = int(input(messages["vs_a"]))
-                        b = int(input(messages["vs_b"]))
+                        nb_team = int(input(messages["vs_nb_team"]))
+                        nb_player = int(input(messages["vs_nb_player"]))
 
-                        vs(lang, a, b, auto_name)
+                        vs(lang, nb_team, nb_player, auto_name)
 
                     elif mode == 2:
                         os.system('cls' if os.name == 'nt' else 'clear')

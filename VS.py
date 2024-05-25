@@ -40,6 +40,13 @@ def vs(lang, nb_team, nb_player, auto_name):
                 player.team = t
                 assigned = True
 
+    for team in teams:
+        if not team:
+            random_team = random.choice([team for team in teams if len(team) >= 2])
+            random_player = random_team.pop(random.randint(0, len(random_team) - 1))
+            team.append(random_player)
+            random_player.team = teams.index(team)
+
     max_name_length, min_name_length,  = max(len(name) for name in player_names), min(len(name) for name in player_names)
 
     for team in teams:
@@ -177,23 +184,34 @@ def vs(lang, nb_team, nb_player, auto_name):
                         print(f"{player_info_table}")
 
                 for i, team in enumerate(teams, start=1):
-                    print(f"{i}. Team {i}    ")
+                    if i == 1:
+                        print(f"\n{i}. Team {i}")
+
+                    else:
+                        print(f"{i}. Team {i}")
+
+                    if i == len(teams):
+                        print(f"{i + 1}. tous les joueurs\n")
 
                 players_stat_team = int(input(messages["message_view_stat"]))
 
-                if 1 <= players_stat_team <= len(teams) + 1:
-                    if (players_stat_team - 1) == 0:
-                        for team in teams:
-                            for player in team:
-                                if player.hp > 0:
-                                    player.Display_Info(player.weapon, player.weapon.ammo_type, player.weapon.mode, player.armor)
-                    else:
-                        for player in teams[players_stat_team - 1]:
-                            if player.hp > 0:
-                                player.Display_Info(player.weapon, player.weapon.ammo_type, player.weapon.mode, player.armor)
+                while True:
+                    try:
+                        if 1 <= players_stat_team <= len(teams) + 2:
+                            if players_stat_team == len(teams) + 1:
+                                for team in teams:
+                                    for player in team:
+                                        if player.hp > 0:
+                                            player.Display_Info(player.weapon, player.weapon.ammo_type, player.weapon.mode, player.armor)
+                                break
+                            else:
+                                for player in teams[players_stat_team - 1]:
+                                    if player.hp > 0:
+                                        player.Display_Info(player.weapon, player.weapon.ammo_type, player.weapon.mode, player.armor)
+                                break
 
-                else:
-                    print(messages["error_valide_number"])
+                    except:
+                        print(messages["error_valide_number"])
 
                 input(messages["press_enter"])
 
